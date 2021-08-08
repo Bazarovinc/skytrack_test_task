@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:alpine
+    restart: always
+    environment:
+      POSTGRES_DB: skytrack_test
+      POSTGRES_PASSWORD: skytrack
+      POSTGRES_USER: skytrack_test_task
+    ports:
+      - 5432:5432
